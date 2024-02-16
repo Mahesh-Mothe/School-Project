@@ -1,0 +1,41 @@
+.scrolling-text-container {
+    height: 100%; /* Set the height of the container */
+    overflow: hidden; /* Hide overflow content */
+    padding:"10px"
+  }
+  
+  .scrolling-text {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    animation: scroll-up 4s linear infinite;
+    height:70% /* Adjust animation duration as needed */
+  }
+  
+  @keyframes scroll-up {
+    0% {
+      transform: translateY(100%); /* Start from below the container */
+    }
+    100% {
+      transform: translateY(-100%); /* Scroll to the top of the container */
+    }
+  }
+  .view-more-btn {
+   width: 18%;
+     background-color: '#ffff';
+      color: 'black';
+       border: 'none';
+        padding: '10px 0';
+         cursor: 'pointer';
+          border-radius:'20px';
+          text-align:"center";
+         font-weight:"500";
+    transition: background-color 0.3s; 
+    
+  }
+  
+  .view-more-btn:hover {
+    background-color: black; /* Change background color to black on hover */
+    color: white; /* Change text color to white on hover */
+  }
+  
